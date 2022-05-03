@@ -9,32 +9,58 @@ public class Incident implements java.io.Serializable {
 	static final long serialVersionUID = 1L;
 
 	@org.kie.api.definition.type.Label(value = "VehicleID")
-	private java.lang.String vehicle_id;
+	private java.lang.String vehicle;
+
 	@org.kie.api.definition.type.Label(value = "Description")
-	private java.lang.String description_id;
+	private java.lang.String description;
+
+	@org.kie.api.definition.type.Label(value = "State")
+	private java.lang.String state;
+
+	@org.kie.api.definition.type.Label(value = "ID")
+	private java.lang.String id;
 
 	public Incident() {
 	}
 
-	public java.lang.String getVehicle_id() {
-		return this.vehicle_id;
+	public java.lang.String getVehicle() {
+		return this.vehicle;
 	}
 
-	public void setVehicle_id(java.lang.String vehicle_id) {
-		this.vehicle_id = vehicle_id;
+	public void setVehicle(java.lang.String vehicle) {
+		this.vehicle = vehicle;
 	}
 
-	public java.lang.String getDescription_id() {
-		return this.description_id;
+	public java.lang.String getDescription() {
+		return this.description;
 	}
 
-	public void setDescription_id(java.lang.String description_id) {
-		this.description_id = description_id;
+	public void setDescription(java.lang.String description) {
+		this.description = description;
 	}
 
-	public Incident(java.lang.String vehicle_id, java.lang.String description_id) {
-		this.vehicle_id = vehicle_id;
-		this.description_id = description_id;
+	public java.lang.String getState() {
+		return this.state;
+	}
+
+	public void setState(java.lang.String state) {
+		this.state = state;
+	}
+
+	public java.lang.String getId() {
+		return this.id;
+	}
+
+	public void setId(java.lang.String id) {
+		this.id = id;
+	}
+
+	public Incident(java.lang.String vehicle, java.lang.String description,
+			java.lang.String state, java.lang.String id) {
+		this.vehicle = vehicle;
+		this.description = description;
+		this.state = state;
+		this.id = id;
 	}
 
 }
