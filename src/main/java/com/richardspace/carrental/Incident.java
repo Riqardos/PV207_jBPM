@@ -6,12 +6,35 @@ package com.richardspace.carrental;
 
 public class Incident implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Incident() {
-    }
+	@org.kie.api.definition.type.Label(value = "VehicleID")
+	private java.lang.String vehicle_id;
+	@org.kie.api.definition.type.Label(value = "Description")
+	private java.lang.String description_id;
 
+	public Incident() {
+	}
 
+	public java.lang.String getVehicle_id() {
+		return this.vehicle_id;
+	}
 
+	public void setVehicle_id(java.lang.String vehicle_id) {
+		this.vehicle_id = vehicle_id;
+	}
+
+	public java.lang.String getDescription_id() {
+		return this.description_id;
+	}
+
+	public void setDescription_id(java.lang.String description_id) {
+		this.description_id = description_id;
+	}
+
+	public Incident(java.lang.String vehicle_id, java.lang.String description_id) {
+		this.vehicle_id = vehicle_id;
+		this.description_id = description_id;
+	}
 
 }
