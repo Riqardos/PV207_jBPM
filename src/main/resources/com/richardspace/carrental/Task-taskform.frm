@@ -1,0 +1,1 @@
+{"id":"9f41a9ed-702d-4002-9fe8-5a5a46b06ea4","name":"Task-taskform.frm","model":{"taskName":"Task","processId":"CarRental.CreateIncidentProcess","properties":[],"formModelType":"org.kie.workbench.common.forms.jbpm.model.authoring.task.TaskFormModel"},"fields":[],"layoutTemplate":{"version":3,"style":"FLUID","layoutProperties":{},"rows":[]}}
