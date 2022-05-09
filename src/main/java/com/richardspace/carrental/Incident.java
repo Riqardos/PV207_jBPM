@@ -10,7 +10,7 @@ public class Incident implements java.io.Serializable {
 	static final long serialVersionUID = 1L;
 
 	@org.kie.api.definition.type.Label("VehicleID")
-	private Integer vehicle;
+	private String vehicle;
 
 	@org.kie.api.definition.type.Label("Description")
 	private java.lang.String description;
@@ -19,10 +19,10 @@ public class Incident implements java.io.Serializable {
 	private java.lang.String state;
 
 	@org.kie.api.definition.type.Label("ID")
-	private Integer id;
+	private String id;
 
 	@org.kie.api.definition.type.Label("UserID")
-	private Integer user;
+	private String user;
 
 	@org.kie.api.definition.type.Label("Type")
 	private java.lang.String type;
@@ -54,33 +54,33 @@ public class Incident implements java.io.Serializable {
 		this.type = type;
 	}
 
-	public java.lang.Integer getVehicle() {
+	public java.lang.String getVehicle() {
 		return this.vehicle;
 	}
 
-	public void setVehicle(java.lang.Integer vehicle) {
+	public void setVehicle(java.lang.String vehicle) {
 		this.vehicle = vehicle;
 	}
 
-	public java.lang.Integer getId() {
+	public java.lang.String getId() {
 		return this.id;
 	}
 
-	public void setId(java.lang.Integer id) {
+	public void setId(java.lang.String id) {
 		this.id = id;
 	}
 
-	public java.lang.Integer getUser() {
+	public java.lang.String getUser() {
 		return this.user;
 	}
 
-	public void setUser(java.lang.Integer user) {
+	public void setUser(java.lang.String user) {
 		this.user = user;
 	}
 
-	public Incident(java.lang.Integer vehicle, java.lang.String description,
-			java.lang.String state, java.lang.Integer id,
-			java.lang.Integer user, java.lang.String type) {
+	public Incident(java.lang.String vehicle, java.lang.String description,
+			java.lang.String state, java.lang.String id, java.lang.String user,
+			java.lang.String type) {
 		this.vehicle = vehicle;
 		this.description = description;
 		this.state = state;
