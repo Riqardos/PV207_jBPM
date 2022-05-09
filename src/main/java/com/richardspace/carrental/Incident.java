@@ -21,6 +21,9 @@ public class Incident implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("ID")
 	private java.lang.String id;
 
+	@org.kie.api.definition.type.Label(value = "UserID")
+	private java.lang.String user;
+
 	public Incident() {
 	}
 
@@ -56,12 +59,21 @@ public class Incident implements java.io.Serializable {
 		this.id = id;
 	}
 
+	public java.lang.String getUser() {
+		return this.user;
+	}
+
+	public void setUser(java.lang.String user) {
+		this.user = user;
+	}
+
 	public Incident(java.lang.String vehicle, java.lang.String description,
-			java.lang.String state, java.lang.String id) {
+			java.lang.String state, java.lang.String id, java.lang.String user) {
 		this.vehicle = vehicle;
 		this.description = description;
 		this.state = state;
 		this.id = id;
+		this.user = user;
 	}
 
 }
