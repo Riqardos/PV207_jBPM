@@ -27,6 +27,9 @@ public class Incident implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Type")
 	private java.lang.String type;
 
+	@org.kie.api.definition.type.Label(value = "Resolution")
+	private java.lang.String resolution;
+
 	public Incident() {
 	}
 
@@ -78,15 +81,24 @@ public class Incident implements java.io.Serializable {
 		this.user = user;
 	}
 
+	public java.lang.String getResolution() {
+		return this.resolution;
+	}
+
+	public void setResolution(java.lang.String resolution) {
+		this.resolution = resolution;
+	}
+
 	public Incident(java.lang.String vehicle, java.lang.String description,
 			java.lang.String state, java.lang.String id, java.lang.String user,
-			java.lang.String type) {
+			java.lang.String type, java.lang.String resolution) {
 		this.vehicle = vehicle;
 		this.description = description;
 		this.state = state;
 		this.id = id;
 		this.user = user;
 		this.type = type;
+		this.resolution = resolution;
 	}
 
 }
