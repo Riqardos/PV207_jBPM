@@ -9,14 +9,17 @@ public class Vehicle implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "Id")
+	@org.kie.api.definition.type.Label("Id")
 	private java.lang.String id;
-	@org.kie.api.definition.type.Label(value = "Model")
+	@org.kie.api.definition.type.Label("Model")
 	private java.lang.String model;
-	@org.kie.api.definition.type.Label(value = "State")
+	@org.kie.api.definition.type.Label("State")
 	private java.lang.String state;
-	@org.kie.api.definition.type.Label(value = "Vin")
+	@org.kie.api.definition.type.Label("Vin")
 	private java.lang.String vin;
+
+	@org.kie.api.definition.type.Label(value = "Location")
+	private java.lang.String location;
 
 	public Vehicle() {
 	}
@@ -53,12 +56,22 @@ public class Vehicle implements java.io.Serializable {
 		this.vin = vin;
 	}
 
+	public java.lang.String getLocation() {
+		return this.location;
+	}
+
+	public void setLocation(java.lang.String location) {
+		this.location = location;
+	}
+
 	public Vehicle(java.lang.String id, java.lang.String model,
-			java.lang.String state, java.lang.String vin) {
+			java.lang.String state, java.lang.String vin,
+			java.lang.String location) {
 		this.id = id;
 		this.model = model;
 		this.state = state;
 		this.vin = vin;
+		this.location = location;
 	}
 
 }
