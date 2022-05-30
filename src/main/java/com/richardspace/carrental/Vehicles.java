@@ -6,12 +6,25 @@ package com.richardspace.carrental;
 
 public class Vehicles implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Vehicles() {
-    }
+	@org.kie.api.definition.type.Label(value = "Vehicles")
+	private java.util.List<com.richardspace.carrental.Vehicle> vehicles;
 
+	public Vehicles() {
+	}
 
+	public java.util.List<com.richardspace.carrental.Vehicle> getVehicles() {
+		return this.vehicles;
+	}
 
+	public void setVehicles(
+			java.util.List<com.richardspace.carrental.Vehicle> vehicles) {
+		this.vehicles = vehicles;
+	}
+
+	public Vehicles(java.util.List<com.richardspace.carrental.Vehicle> vehicles) {
+		this.vehicles = vehicles;
+	}
 
 }
